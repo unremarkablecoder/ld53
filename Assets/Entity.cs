@@ -263,6 +263,12 @@ public class Entity : MonoBehaviour {
             case EntityType.HiddenCoalDeposit:
             case EntityType.HiddenUraniumDeposit:
                 return "An obstacle. You can't build here.";
+            case EntityType.CoalWarehouse:
+                return "Transfer Coal via this warehouse.";
+            case EntityType.LogWarehouse:
+                return "Transfer Logs via this warehouse.";
+            case EntityType.WoodWarehouse:
+                return "Transfer Wood via this warehouse.";
             default:
                 return "Undefined!";
         }
